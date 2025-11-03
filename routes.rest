@@ -6,32 +6,29 @@ GET http://localhost:3000/contacts
 ### Get contact by id
 GET http://localhost:3000/contacts/690603529cfcde64a462ba04
 
-// create user
-
-
 ### Create contact
 POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Ron",
-    "lastName": "Weasley",
-    "email": "ron.weasley@hogwarts.com",
-    "favoriteColor": "Green",
+    "firstName": "Draco",
+    "lastName": "Malfoy",
+    "email": "draco.malfoy@hogwarts.com",
+    "favoriteColor": "Black",
     "birthday": "05-31-1990"
 }
 
 // update contact
 ### Update contact
-PUT http://localhost:3000/contacts/690926c183f693d4a6e40430 HTTP/1.1
+PUT http://localhost:3000/contacts/6909270183f693d4a6e40432 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Ron",
-    "lastName": "Weasley",
-    "email": "ron.weasley@hogwarts.edu",
-    "favoriteColor": "Purple",
-    "birthday": "06-15-1990"
+    "firstName": "Severus",
+    "lastName": "Snape",
+    "email": "severus.snape@hogwarts.edu",
+    "favoriteColor": "Yellow",
+    "birthday": "06-15-1965"
 }
 
 ### Delete contact
